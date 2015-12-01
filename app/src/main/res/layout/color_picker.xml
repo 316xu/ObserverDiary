@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+
+            android:gravity="center"
+            android:id="@+id/colortext"
+            android:text="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/red"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <hust.xujifa.observerdiary.ui.Continuousslider
+                android:id="@+id/red_slider"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/green"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <hust.xujifa.observerdiary.ui.Continuousslider
+                android:id="@+id/green_slider"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/blue"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <hust.xujifa.observerdiary.ui.Continuousslider
+                android:id="@+id/blue_slider"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

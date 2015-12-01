@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MyActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            >
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:layout_height="match_parent"/>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/diary_list"
+            />
+    </RelativeLayout>
+
+    <hust.xujifa.observerdiary.ui.FloatingActionButtonMenu
+        android:id="@+id/fabm"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <hust.xujifa.observerdiary.ui.FloatingActionButton
+            app:backgroundColor="@color/blue"
+            app:fab_icon="@android:drawable/ic_btn_speak_now"
+            android:id="@+id/speak"
+            android:onClick="clickB"
+            app:fabelevation="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <hust.xujifa.observerdiary.ui.FloatingActionButton
+            app:backgroundColor="@color/blue"
+            android:onClick="clickB"
+            android:id="@+id/camera"
+            app:fab_icon="@android:drawable/ic_menu_camera"
+            app:fabelevation="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <hust.xujifa.observerdiary.ui.FloatingActionButton
+            android:onClick="clickB"
+            android:id="@+id/write"
+            app:backgroundColor="@color/blue"
+            app:fab_icon="@android:drawable/ic_menu_edit"
+
+            app:fabelevation="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <hust.xujifa.observerdiary.ui.FloatingActionButton
+            android:id="@+id/expand"
+            android:onClick="clickB"
+            app:backgroundColor="@color/blue"
+            app:fab_icon="@mipmap/add"
+
+            app:fabelevation="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </hust.xujifa.observerdiary.ui.FloatingActionButtonMenu>
+
+</android.support.design.widget.CoordinatorLayout>
